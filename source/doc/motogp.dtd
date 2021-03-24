@@ -1,0 +1,14 @@
+<!ELEMENT motogp (category+, contact)>
+<!ELEMENT category (rider+)>
+<!ELEMENT rider (name, age, number, team, bike)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT age (#PCDATA)>
+<!ELEMENT number (#PCDATA)>
+<!ELEMENT team (#PCDATA)>
+<!ELEMENT bike (#PCDATA)>
+<!ATTLIST category type CDATA #REQUIRED>
+<!ELEMENT contact (person+)>
+<!ELEMENT person (name, phone, email)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT phone (#PCDATA)>
+<!ELEMENT email (#PCDATA)>

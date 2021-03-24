@@ -1,0 +1,174 @@
+<?xml version="1.0" standalone="no"?>
+<!DOCTYPE motogp SYSTEM "motogp.dtd">
+<motogp>
+  <category type="MotoGP">
+    <rider>
+      <name>Valentino Mizi</name>
+      <age>21</age>
+      <number>46</number>
+      <team>Energy Yamaha</team>
+      <bike>Yamaha</bike>
+    </rider>
+    <rider>
+      <name>Asyraf Vinales</name>
+      <age>21</age>
+      <number>12</number>
+      <team>Energy Yamaha</team>
+      <bike>Yamaha</bike>
+    </rider>
+    <rider>
+      <name>Zul Marquez</name>
+      <age>21</age>
+      <number>93</number>
+      <team>Honda Repsol</team>
+      <bike>Honda</bike>
+    </rider>
+    <rider>
+      <name>Din Lorenzo</name>
+      <age>21</age>
+      <number>69</number>
+      <team>Honda Repsol</team>
+      <bike>Honda</bike>
+    </rider>
+    <rider>
+      <name>Hairul Syahrin</name>
+      <age>21</age>
+      <number>55</number>
+      <team>Redbull Tech</team>
+      <bike>Ktm</bike>
+    </rider>
+    <rider>
+      <name>Azwan Zarco</name>
+      <age>21</age>
+      <number>5</number>
+      <team>Redbull Tech</team>
+      <bike>Ktm</bike>
+    </rider>
+    <rider>
+      <name>Firzantino</name>
+      <age>21</age>
+      <number>33</number>
+      <team>Movistar</team>
+      <bike>Benelli</bike>
+    </rider>
+    <rider>
+      <name>Wan Rempit</name>
+      <age>21</age>
+      <number>31</number>
+      <team>Movistar</team>
+      <bike>Benelli</bike>
+    </rider>
+    <rider>
+      <name>Fish Akso</name>
+      <age>50</age>
+      <number>98</number>
+      <team>Merlimau Racer</team>
+      <bike>Skuter</bike>
+    </rider>
+  </category>
+  <category type="Moto2">
+    <rider>
+      <name>Firzan Pescao</name>
+      <age>21</age>
+      <number>76</number>
+      <team>Redbull</team>
+      <bike>KTM</bike>
+    </rider>
+    <rider>
+      <name>Luqman Beriman</name>
+      <age>21</age>
+      <number>64</number>
+      <team>Redbull</team>
+      <bike>KTM</bike>
+    </rider>
+    <rider>
+      <name>Ikhwan Messi</name>
+      <age>21</age>
+      <number>34</number>
+      <team>Monster Energy</team>
+      <bike>YAMAHA</bike>
+    </rider>
+    <rider>
+      <name>Acap Cantik</name>
+      <age>21</age>
+      <number>41</number>
+      <team>Monster Energy</team>
+      <bike>YAMAHA</bike>
+    </rider>
+    <rider>
+      <name>Luq Skywalker</name>
+      <age>21</age>
+      <number>77</number>
+      <team>Honda</team>
+      <bike>CBR</bike>
+    </rider>
+    <rider>
+      <name>Abdul Wahib</name>
+      <age>21</age>
+      <number>47</number>
+      <team>Honda</team>
+      <bike>CBR</bike>
+    </rider>
+  </category>
+  <category type="Moto3">
+    <rider>
+      <name>Din Salah</name>
+      <age>21</age>
+      <number>10</number>
+      <team>Yamalube</team>
+      <bike>R25</bike>
+    </rider>
+    <rider>
+      <name>Zul Ronaldo</name>
+      <age>21</age>
+      <number>9</number>
+      <team>Yamalube</team>
+      <bike>R3</bike>
+    </rider>
+    <rider>
+      <name>Asyraf Uptown</name>
+      <age>21</age>
+      <number>23</number>
+      <team>KINGDRAG</team>
+      <bike>Zontes310r</bike>
+    </rider>
+    <rider>
+      <name>Ikhwan Betul</name>
+      <age>21</age>
+      <number>27</number>
+      <team>KINGDRAG</team>
+      <bike>Z250</bike>
+    </rider>
+    <rider>
+      <name>Firzan Subri</name>
+      <age>21</age>
+      <number>90</number>
+      <team>Suzuki</team>
+      <bike>FR200</bike>
+    </rider>
+    <rider>
+      <name>Hairul Kunalan</name>
+      <age>21</age>
+      <number>15</number>
+      <team>Suzuki</team>
+      <bike>GSX200</bike>
+    </rider>
+  </category>
+  <contact>
+    <person>
+      <name>Tajuddin</name>
+      <phone>012321432</phone>
+      <email>dinkacak@motorsports.com</email>
+    </person>
+    <person>
+      <name>Zulhelmi</name>
+      <phone>013432543</phone>
+      <email>zulkacak@motorsports.com</email>
+    </person>
+    <person>
+      <name>Nurhamizi</name>
+      <phone>017876987</phone>
+      <email>mizikacak@motorsports.com</email>
+    </person>
+  </contact>
+</motogp>
