@@ -73,7 +73,7 @@
             </ul>
             <ul>            
                 <li> <a class = "active" href = "<?php echo base_url(); ?>Motogp"> MotoGP </a></li>
-                <li> <a href = "<?php echo base_url(); ?>Moto2"> Moto2 </a></li>
+                <li> <a href = "<?php echo base_url('Motogp/sel1'); ?>"> Moto2 </a></li>
                 <li> <a href = "<?php echo base_url(); ?>Moto3"> Moto3 </a></li>           
             </ul>
         </div>

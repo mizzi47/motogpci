@@ -25,7 +25,7 @@
 				<span class="login100-form-title p-b-41">
 					Admin Login
 				</span>
-				<form class="login100-form validate-form p-b-33 p-t-5" method="POST" action = "<?php echo base_url(); ?>source/doc/login.php">
+				<form class="login100-form validate-form p-b-33 p-t-5" method="POST" action = "<?php echo base_url(); ?>">
 
 					<div class="wrap-input100 validate-input" data-validate = "Enter username" action="<?php echo base_url(); ?>">
 						<input class="input100" type="text" name="username" placeholder="User name">

@@ -8,5 +8,10 @@ class Motogp extends CI_Controller {
         $this->load->helper('url'); 
  		$this->load->view('motogp'); 
     }  
+    
+    public function sel1(){
+        $this->load->helper('url');
+        redirect('Moto2', 'refresh');;
+    }
 }  
 ?>  

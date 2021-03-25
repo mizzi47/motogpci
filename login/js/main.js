@@ -3,8 +3,7 @@
     "use strict";
 
 
-    /*==================================================================
-    [ Focus input ]*/
+    //focus input 
     $('.input100').each(function(){
         $(this).on('blur', function(){
             if($(this).val().trim() != "") {
@@ -17,8 +16,7 @@
     })
   
   
-    /*==================================================================
-    [ Validate ]*/
+    //utk validate
     var input = $('.validate-input .input100');
 
     $('.validate-form').on('submit',function(){
@@ -66,8 +64,7 @@
         $(thisAlert).removeClass('alert-validate');
     }
     
-    /*==================================================================
-    [ Show pass ]*/
+    //show pass
     var showPass = 0;
     $('.btn-show-pass').on('click', function(){
         if(showPass == 0) {
