@@ -102,7 +102,7 @@
                 <li><img src = "source/navlogo.png" height ="50px"></li>
             </ul>
             <ul class = "pic">
-                <li> <a class = "login" href ="<?php echo base_url(); ?>Admin" > Login </a></li>
+                <li> <a class = "login" href ="<?php echo base_url('/newhome/login'); ?>" > Login </a></li>
             </ul>
             <ul>
                 <li> <a class = "active" href = "<?php echo base_url(); ?>" > Home </a></li>
