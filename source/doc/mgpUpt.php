@@ -1,19 +1,19 @@
 <?php
 if (isset($_POST["submit_motogp"]) && !empty($_POST["submit_motogp"])){            
     if(empty($_POST["r_number"])){ 
-        echo "<script type='text/javascript'>alert('Number is not filled');window.location.href='../../motogp.html';</script>";
+        echo "<script type='text/javascript'>alert('Number is not filled');window.location.href='http://localhost:8012/testcode/Motogp';</script>";
     } 
     else if (empty($_POST['r_name'])) {
-        echo "<script type='text/javascript'>alert('Name is not filled');window.location.href='../../motogp.html';</script>";
+        echo "<script type='text/javascript'>alert('Name is not filled');window.location.href='http://localhost:8012/testcode/Motogp';</script>";
     } 
     else if (empty($_POST['r_age'])) {
-        echo "<script type='text/javascript'>alert('Age is not filled');window.location.href='../../motogp.html';</script>";
+        echo "<script type='text/javascript'>alert('Age is not filled');window.location.href='http://localhost:8012/testcode/Motogp';</script>";
     } 
     else if (empty($_POST['r_team'])) {
-        echo "<script type='text/javascript'>alert('Team is not filled');window.location.href='../../motogp.html';</script>";
+        echo "<script type='text/javascript'>alert('Team is not filled');window.location.href='http://localhost:8012/testcode/Motogp';</script>";
     } 
     else if (empty($_POST['r_bike'])) {
-        echo "<script type='text/javascript'>alert('Bike is not filled');window.location.href='../../motogp.html';</script>";
+        echo "<script type='text/javascript'>alert('Bike is not filled');window.location.href='http://localhost:8012/testcode/Motogp';</script>";
     } 
     else{
         $xml = new DomDocument("1.0", "UTF-8");
@@ -45,29 +45,29 @@ if (isset($_POST["submit_motogp"]) && !empty($_POST["submit_motogp"])){
             $xml->preserveWhiteSpace = false;
             $xml->formatOutput = true;
             $xml->save('motogp.xml');
-            echo "<script type='text/javascript'>alert('Rider was updated successfully!');window.location.href='../../motogp.html';</script>";      
+            echo "<script type='text/javascript'>alert('Rider was updated successfully!');window.location.href='http://localhost:8012/testcode/Motogp';</script>";      
         }
         else{
-            echo "<script type='text/javascript'>alert('Selected rider is not found in MotoGP');window.location.href='../../motogp.html';</script>";
+            echo "<script type='text/javascript'>alert('Selected rider is not found in MotoGP');window.location.href='http://localhost:8012/testcode/Motogp';</script>";
         }
      }
 }
 
 if (isset($_POST["submit_moto2"]) && !empty($_POST["submit_moto2"])){
     if (empty($_POST['r_number'])) {
-        echo "<script type='text/javascript'>alert('Number is not filled');window.location.href='../../moto2.html';</script>";
+        echo "<script type='text/javascript'>alert('Number is not filled');window.location.href='http://localhost:8012/testcode/Moto2';</script>";
     }             
     else if(empty($_POST["r_name"])){ 
-        echo "<script type='text/javascript'>alert('Name is not filled');window.location.href='../../moto2.html';</script>";
+        echo "<script type='text/javascript'>alert('Name is not filled');window.location.href='http://localhost:8012/testcode/Moto2';</script>";
     } 
     else if (empty($_POST['r_age'])) {
-        echo "<script type='text/javascript'>alert('Age is not filled');window.location.href='../../moto2.html';</script>";
+        echo "<script type='text/javascript'>alert('Age is not filled');window.location.href='http://localhost:8012/testcode/Moto2';</script>";
     } 
     else if (empty($_POST['r_team'])) {
-        echo "<script type='text/javascript'>alert('Team is not filled');window.location.href='../../moto2.html';</script>";
+        echo "<script type='text/javascript'>alert('Team is not filled');window.location.href='http://localhost:8012/testcode/Moto2';</script>";
     } 
     else if (empty($_POST['r_bike'])) {
-        echo "<script type='text/javascript'>alert('Bike is not filled');window.location.href='../../moto2.html';</script>";
+        echo "<script type='text/javascript'>alert('Bike is not filled');window.location.href='http://localhost:8012/testcode/Moto2';</script>";
     } 
     else{
         $xml = new DomDocument("1.0", "UTF-8");
@@ -99,30 +99,30 @@ if (isset($_POST["submit_moto2"]) && !empty($_POST["submit_moto2"])){
             $xml->preserveWhiteSpace = false;
             $xml->formatOutput = true;
             $xml->save('motogp.xml');
-            echo "<script type='text/javascript'>alert('Rider was updated successfully!');window.location.href='../../moto2.html';</script>";
+            echo "<script type='text/javascript'>alert('Rider was updated successfully!');window.location.href='http://localhost:8012/testcode/Moto2';</script>";
              
         }
         else{
-            echo "<script type='text/javascript'>alert('Selected rider is not found in Moto2');window.location.href='../../moto2.html';</script>";
+            echo "<script type='text/javascript'>alert('Selected rider is not found in Moto2');window.location.href='http://localhost:8012/testcode/Moto2';</script>";
         }
      }
 }
 
 if (isset($_POST["submit_moto3"]) && !empty($_POST["submit_moto3"])){
     if(empty($_POST["r_number"])){ 
-        echo "<script type='text/javascript'>alert('Number is not filled');window.location.href='../../moto3.html';</script>";     
+        echo "<script type='text/javascript'>alert('Number is not filled');window.location.href='http://localhost:8012/testcode/Moto3';</script>";     
     } 
     else if (empty($_POST['r_name'])) {
-        echo "<script type='text/javascript'>alert('Name is not filled');window.location.href='../../moto3.html';</script>";
+        echo "<script type='text/javascript'>alert('Name is not filled');window.location.href='http://localhost:8012/testcode/Moto3';</script>";
     } 
     else if (empty($_POST['r_age'])) {
-        echo "<script type='text/javascript'>alert('Age is not filled');window.location.href='../../moto3.html';</script>";
+        echo "<script type='text/javascript'>alert('Age is not filled');window.location.href='http://localhost:8012/testcode/Moto3';</script>";
     } 
     else if (empty($_POST['r_team'])) {
-        echo "<script type='text/javascript'>alert('Team is not filled');window.location.href='../../moto3.html';</script>";
+        echo "<script type='text/javascript'>alert('Team is not filled');window.location.href='http://localhost:8012/testcode/Moto3';</script>";
     } 
     else if (empty($_POST['r_bike'])) {
-        echo "<script type='text/javascript'>alert('Bike is not filled');window.location.href='../../moto3.html';</script>";
+        echo "<script type='text/javascript'>alert('Bike is not filled');window.location.href='http://localhost:8012/testcode/Moto3';</script>";
     } 
     else{
         $xml = new DomDocument("1.0", "UTF-8");
@@ -154,11 +154,11 @@ if (isset($_POST["submit_moto3"]) && !empty($_POST["submit_moto3"])){
             $xml->preserveWhiteSpace = false;
             $xml->formatOutput = true;
             $xml->save('motogp.xml');
-            echo "<script type='text/javascript'>alert('Rider was updated successfully!');window.location.href='../../moto3.html';</script>";
+            echo "<script type='text/javascript'>alert('Rider was updated successfully!');window.location.href='http://localhost:8012/testcode/Moto3';</script>";
              
         }
         else{
-            echo "<script type='text/javascript'>alert('Selected rider is not found in Moto3');window.location.href='../../moto3.html';</script>";
+            echo "<script type='text/javascript'>alert('Selected rider is not found in Moto3');window.location.href='http://localhost:8012/testcode/Moto3';</script>";
         }
      }
 }

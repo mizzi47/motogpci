@@ -58,13 +58,7 @@
       <team>Movistar</team>
       <bike>Benelli</bike>
     </rider>
-    <rider>
-      <name>Fish Akso</name>
-      <age>50</age>
-      <number>98</number>
-      <team>Merlimau Racer</team>
-      <bike>Skuter</bike>
-    </rider>
+    
   </category>
   <category type="Moto2">
     <rider>
