@@ -4,6 +4,10 @@
         <Title>MotoGP Admin</Title>
         <link rel="stylesheet" type = "text/css" href = "<?php echo base_url(); ?>css/style.css"> 
         <link rel="icon" type="image/png" href="<?php echo base_url(); ?>source/homecon.png"/>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.js"></script>
+	<link rel="stylesheet" type="text/css" href="https://cdn.datatables.net/v/dt/dt-1.10.13/datatables.min.css"/>
+	<script type="text/javascript" src="https://cdn.datatables.net/v/dt/dt-1.10.13/datatables.min.js"></script>
+	<script type="text/javascript" src="https://cdn.datatables.net/1.10.13/js/dataTables.bootstrap.min.js"></script>
         <script type="text/javascript">
             function logout() {
                 var ask = window.confirm("Are you sure you want to log out?");
@@ -11,60 +15,10 @@
                     window.location.href = "<?php echo base_url(); ?>";
                 }
             }
-            function loadXMLDoc(dname)
-            {
-                if (window.XMLHttpRequest)
-                {
-                xhttp=new XMLHttpRequest();
-                }
-                else 
-                {
-                xhttp=new ActiveXObject("Microsoft.XMLHTTP");
-                }
-                xhttp.open("GET",dname,false);
-                xhttp.send();
-                return xhttp.responseXML;
-            }
-            xmlDoc=loadXMLDoc("<?php echo base_url(); ?>source/doc/motogp.xml");
-            gp = xmlDoc.getElementsByTagName("category")[0];
-            rd =gp.getElementsByTagName("rider");
-            nm =gp.getElementsByTagName("name");
-            ag =gp.getElementsByTagName("age");
-            no =gp.getElementsByTagName("number");
-            tm =gp.getElementsByTagName("team");
-            bk =gp.getElementsByTagName("bike");
-
-            function allriders() {
-                document.write("<font size='5' color='yellow' face='fantasy'' ><table align='center' border = '1'>");
-                document.write("<tr>");
-                document.write("<td>"+"No: ");
-                document.write("<td>"+"Name: ");
-                document.write("<td>"+"Age: ");
-                document.write("<td>"+"Number: ");
-                document.write("<td>"+"Team: ");
-                document.write("<td>"+"Bike: ");
-                document.write("</tr>");
-                for(i=0;i<rd.length;i++)
-                    {
-                document.write("<tr>");
-                document.write("<td>"+ (i+1));
-                document.write("<td>"+ nm[i].childNodes[0].nodeValue +"</td>");
-                document.write("<td>"+ ag[i].childNodes[0].nodeValue+"</td>");
-                document.write("<td>"+ no[i].childNodes[0].nodeValue+"</td>");
-                document.write("<td>"+ tm[i].childNodes[0].nodeValue+"</td>");
-                document.write("<td>"+ bk[i].childNodes[0].nodeValue+"</td>");
-                document.write("</tr>");
-                }
-                document.write("</table></font>");
-            }
-            
-            function deleteRider(){ 
-                alert("This option not ready yet!")
-            }
         </script>
     </head>
     <body class = "mgp">
-        <div class = "nav">
+        <div class = "nav navbar-offset" >
             <ul class = "pic">
                 <li><img src = "<?php echo base_url(); ?>source/navlogo.png" height ="50px"></li>
             </ul>
@@ -79,15 +33,28 @@
             </ul>
         </div>
         <div class = "contain">
-            <br><h1 align = "center"><u>List of riders</u></h1>
+            <br><h1 align = "center"><u>List of Coach</u></h1>
         </div>
-        <div class = "contain">
-        <div class = "contain">
-            <script type = "text/javascript">allriders()</script><br>
+        <div class="containtable">
+        <font color = 'black'>
+            <table id="coach-list" class="table table-bordered table-striped table-hover">
+            <font color ='black'>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Assigned Riders</th>
+                        <th>Age</th>
+                    </tr>
+                    
+                </thead>
+                <tbody>
+                </tbody>
+                </font>
+            </table>
+            </font>
         </div>
-        </div>
-        <div class = "contain">
-            <div class = "contain">
+            <!-- <div class = "contain">
                 <h3 align = "center"><u>Add New Rider</u></h3>
                 <form method ="POST" action ="source/doc/mgpAdd.php">
                 Rider's Info<br>
@@ -116,9 +83,19 @@
                 Bike: <input type="text" name="r_bike"><br>
                 <input class="button" type="submit" name="submit_motogp" value="Update">
                 </form>
-            </div>
-        </div>
+            </div> -->
+        </div></div>
         
  
     </body>
+    <script type="text/javascript">
+$(document).ready(function() {
+    $('#coach-list').DataTable({
+        "ajax": {
+            url : "<?php echo base_url('Motogp/get_coach'); ?>",
+            type : 'GET'
+        },
+    });
+});
+</script>
 </html>
