@@ -25,7 +25,7 @@
                 xhttp.send();
                 return xhttp.responseXML;
             }
-            xmlDoc=loadXMLDoc("source/doc/motogp.xml");
+            xmlDoc=loadXMLDoc("<?php echo base_url(); ?>source/doc/motogp.xml");
             gp = xmlDoc.getElementsByTagName("category")[0];
             rd =gp.getElementsByTagName("rider");
             nm =gp.getElementsByTagName("name");
@@ -66,15 +66,16 @@
     <body class = "mgp">
         <div class = "nav">
             <ul class = "pic">
-                <li><img src = "source/navlogo.png" height ="50px"></li>
+                <li><img src = "<?php echo base_url(); ?>source/navlogo.png" height ="50px"></li>
             </ul>
             <ul class = "pic">
                 <li> <a class = "log"  onclick = "javascript:logout();"> Logout </a></li>
             </ul>
             <ul>            
-                <li> <a class = "active" href = "<?php echo base_url(); ?>Motogp"> MotoGP </a></li>
-                <li> <a href = "<?php echo base_url('Motogp/sel1'); ?>"> Moto2 </a></li>
-                <li> <a href = "<?php echo base_url(); ?>Moto3"> Moto3 </a></li>           
+                <li> <a class = "active" href = "<?php echo base_url(); ?>category/motogp"> MotoGP </a></li>
+                <!-- <li> <a href = "<?php echo base_url('Motogp/sel1'); ?>"> Moto2 </a></li> -->
+                <li> <a href = "<?php echo base_url(); ?>category/moto2"> Moto2 </a></li>
+                <li> <a href = "<?php echo base_url(); ?>category/moto3"> Moto3 </a></li>           
             </ul>
         </div>
         <div class = "contain">

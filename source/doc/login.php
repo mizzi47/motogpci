@@ -25,7 +25,7 @@ if (isset($_POST["login"]) && !empty($_POST["login"])) {
             if ($row["username"] == $user && $row["pass"] == $pass) {
                 echo '<script type="text/javascript">
                     alert("Login Successful!");
-                    window.location.href="http://localhost:8012/testcode/Motogp";
+                    window.location.href="http://localhost:8012/testcode/category/motogp";
                   </script>';
             }
             echo "<script type='text/javascript'>alert('Wrong Username or Password!');window.location.href='http://localhost:8012/testcode/Admin';</script>";
